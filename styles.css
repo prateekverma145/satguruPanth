@@ -1,0 +1,75 @@
+.aura::before {
+ content: "";
+    position: absolute;
+    top:-2px;
+    left:-2px;
+    right:-2px;
+    bottom:-2px;
+    background: #fff;
+}
+.aura::after {
+    content: "";
+       position: absolute;
+       top:-2px;
+       left:-2px;
+       right:-2px;
+       bottom:-2px;
+       background: #fff;
+       filter: blur(40px);
+       /* z-index: -1; */
+   }
+   .aura::before, .aura::after {
+    background:linear-gradient(235deg,#89ff00,#060c21,#00bcd4) ;
+    /* animation-name: spin; */
+    /* animation-duration: 10s; */
+    /* animation-iteration-count: infinite; */
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+.gallary::after{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    /* background-color: #1f1f1f9a; */
+    transform: grayscale(1);
+    z-index:0;
+    /* transform: scaleX(1); */
+  }
+
+  .gallary::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    /* background: linear-gradient(45deg, #343d68, #343d68be, #343d687c); */
+    /* transform: grayscale(1); */
+    transform:scaleX(0);
+    transform-origin: left;
+    transition: all 0.4s;
+    z-index:1;
+  }
+  .gallary:hover::before{
+    transform:scaleX(1);
+  }
+.gallary_content{
+    position: relative;
+    z-index: 2;
+}
+html {
+    scroll-behavior: smooth;
+  }
+  
+ 
+
+
