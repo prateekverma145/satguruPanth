@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://satguru-panth.vercel.app/sitemap.xml
+Sitemap: https://satguru-panth.vercel.app/6194761_4.xml
