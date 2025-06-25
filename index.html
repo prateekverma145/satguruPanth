@@ -169,7 +169,23 @@
       }
     </script> 
 
+<style>
+   .res {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+   }
 
+   @media (min-width: 893px) {
+      .res {
+         flex-direction: row;
+         justify-content: space-between;
+         align-items: center;
+         gap: 3rem;
+      }
+   }
+</style>
    <!-- description  to google -->
 
       <!-- <link href="main.css" rel="stylesheet"> -->
@@ -201,6 +217,7 @@
                <div>
                   <img src="logo.webp" width="700px" class="mx-auto block md:hidden" alt="">
                </div>
+               <div class="w-full res px-4">
                <div class="text-white max-w-[500px] space-y-8 flex flex-col justify-center">
                   <h1 class="text-white font-bold text-[32px] leading-[1.2]">राधास्वामी - राधास्वामी </h1>
                   <h1 class="text-white font-bold text-[42px] leading-[1.2]">सतगुरु पंथ</h1>
@@ -216,6 +233,7 @@
                </div>
                <div class="relative aura bg-white w-[256px] h-[562px]">
                   <img src="hero.jpg" width="250px" class="absolute top-[3px] left-[3px] z-10">
+               </div>
                </div>
             </div>
 
